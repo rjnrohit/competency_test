@@ -45,19 +45,19 @@ at.set_scale(scale);
 at.set_rotate_parameters(x_angle, y_angle,z_angle);
 
 // Apply Translate method to translate above coordinate
-auto translate_coordinate = at.translate(point);
+auto translate_coordinate = at.Translate(point);
 
 // Apply Shear method to above coordinate
-auto shear_coordinate = at.shear(translate_coordinate);
+auto shear_coordinate = at.Shear(translate_coordinate);
 
 //Apply rotation method
-auto rotate_coordinate = at.rotate(shear_coordinate);
+auto rotate_coordinate = at.Rotate(shear_coordinate);
 
 //Apply Scaling
-auto scale_coordinate = at.scale(rotate_coordinate);
+auto scale_coordinate = at.Scale(rotate_coordinate);
 
 //Apply affine transformation all method at once
 
-auto transformed = at.transform(point);
+auto transformed = at.Transform(point);
 ```
 
