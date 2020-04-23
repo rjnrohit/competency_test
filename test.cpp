@@ -10,6 +10,9 @@
 #include <boost/numeric/ublas/io.hpp>
 #include <boost/numeric/ublas/matrix.hpp>
 
+#include <boost/astronomy/coordinate/representation.hpp>
+#include <boost/astronomy/coordinate/io.hpp>
+
 using namespace std;
 using namespace boost::astronomy::coordinate;
 using namespace boost::units;
