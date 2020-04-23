@@ -16,8 +16,11 @@ My affine transformation class expects One translation vector(In any representat
 A Demo program can be seen as follows:
 
 ```
+//Pick a Coordinate
+auto point = make_spherical_representation(1.43*radian, 1.58*radian, 45.4*meter);
+
 //Intialize an affine_transformation class
-Affine_Transformation at;
+Affine_Transformation<decltype(point)> at;
 
 // set translation vector
 auto translate = make_spherical_representation(0.63*radian,0,89*radian, 21*meter);
@@ -40,10 +43,6 @@ at.set_scale(scale);
 // set rotate parameters
 //x_angle = 23*radian, y_anlge = 24*radian, z_angle = 36*degree
 at.set_rotate_parameters(x_angle, y_angle,z_angle);
-
-
-//Pick a Coordinate
-auto point = make_spherical_representation(1.43*radian, 1.58*radian, 45.4*meter);
 
 // Apply Translate method to translate above coordinate
 auto translate_coordinate = at.translate(point);
