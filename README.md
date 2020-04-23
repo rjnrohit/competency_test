@@ -8,7 +8,7 @@ Using this we can transform any representation by following ways:
 2. Shear 
 3. Scale
 4. Rotate
-5. Transform_all (To apply all above three methods at once)
+5. Transform(To apply all above three methods at once)
 
 We can transform all representations of coordinates i.e Cartesian Coordinates, Spherical Coordinates and Spherical Equatorial Coordinates.
 My affine transformation class expects One translation vector(In any representation) and a 3x3 matrix to apply Affine Transformation.
@@ -59,8 +59,5 @@ auto scale_coordinate = at.scale(rotate_coordinate);
 //Apply affine transformation all method at once
 
 auto transformed = at.transform(point);
-
-
-
 ```
 
